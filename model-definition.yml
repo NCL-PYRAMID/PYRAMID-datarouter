@@ -1,0 +1,23 @@
+kind: M
+api_version: v1beta2
+metadata:
+  display_name: PYRAMID <model> Data Router
+  name: pyramid-data-router
+  summary: Routes data from input folders to output folders
+  publisher: Newcastle University
+  description: >
+    Routes data from input to output folders (i.e. /data/inputs to /data/outputs)
+spec:
+  inputs:
+    parameters:
+      - name: DATASLOT
+        title: Outgoing Dataslot Name
+        type: string
+        description: The name of the dataslot (folder) where data should be moved to
+        default: dataslot
+        required: true
+  outputs:
+    datasets:
+      - name: PYRAMID <model> Data Router Output
+        type: txt
+        description: Routed data output
