@@ -31,7 +31,7 @@ jobs:
       - name: Upload to DAFNI
         uses: dafnifacility/dafni-model-uploader@v1.11
         with:
-          definition-path: './model-definition.yaml'
+          definition-path: './model-definition.yml'
           image-path: './pyramid-datarouter.tar.gz'
           username: ${{ secrets.DAFNI_SERVICE_ACCOUNT_USERNAME }}
           password: ${{ secrets.DAFNI_SERVICE_ACCOUNT_PASSWORD }}
