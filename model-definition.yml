@@ -18,7 +18,7 @@ spec:
         required: true
     dataslots:
       - name: INPUT_DATA_SLOT
-        title: DAFNI dataset source
+        description: DAFNI dataset source id
         path: inputs
         required: false
   outputs:
