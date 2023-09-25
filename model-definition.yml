@@ -10,12 +10,17 @@ metadata:
 spec:
   inputs:
     parameters:
-      - name: DATASLOT
-        title: Outgoing Dataslot Name
+      - name: OUTPUT_DATA_FOLDER
+        title: Outgoing Data Folder Name
         type: string
-        description: The name of the dataslot (folder) where data should be moved to
-        default: dataslot
+        description: The name of the data folder where data should be moved to
+        default: output_data_folder
         required: true
+    dataslots:
+      - name: INPUT_DATA_SLOT
+        title: DAFNI dataset source
+        path: inputs
+        required: false
   outputs:
     datasets:
       - name: PYRAMID <model> Data Router Output

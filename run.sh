@@ -15,8 +15,8 @@ data_outputs=$data_root"/outputs"
 echo "Reading from "$data_inputs
 echo "Writing to "$data_outputs
 
-#dataslot=${DATASLOT:-dataslot$RANDOM}
-dataslot=${DATASLOT:-dataslot}
+#output_data_folder=${OUTPUT_DATA_FOLDER:-output_data_folder$RANDOM}
+output_data_folder=${OUTPUT_DATA_FOLDER:-output_data_folder}
 
-mkdir -p $data_outputs/$dataslot
-cp -r $data_inputs/* $data_outputs/$dataslot
+mkdir -p $data_outputs/$output_data_folder
+cp -r $data_inputs/* $data_outputs/$output_data_folder
